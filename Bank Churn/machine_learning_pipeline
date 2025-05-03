@@ -1,0 +1,12 @@
+digraph "Machine Learning Pipeline" {
+	graph [fontcolor="#2D3436" fontname="Sans-Serif" fontsize=15 label="Machine Learning Pipeline" nodesep=0.60 pad=2.0 rankdir=LR ranksep=0.75 splines=ortho]
+	node [fixedsize=true fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 height=1.4 imagescale=true labelloc=b shape=box style=rounded width=1.4]
+	edge [color="#7B8894"]
+	df09a1383ea04e7296dcbe44753e9130 [label="User Input" height=1.9 image="c:\Users\youss\AppData\Local\Programs\Python\Python39\lib\site-packages\resources/onprem/client\client.png" shape=none]
+	"5ebf71c2b05644d69fe40bac82ec8a2f" [label="Data Preprocessing" height=1.9 image="c:\Users\youss\AppData\Local\Programs\Python\Python39\lib\site-packages\resources/onprem/compute\server.png" shape=none]
+	d3e96e5aa1da4a4098de6459f6642c3a [label=Database height=1.9 image="c:\Users\youss\AppData\Local\Programs\Python\Python39\lib\site-packages\resources/onprem/database\postgresql.png" shape=none]
+	"9a1c4193584849d493032b4cbc536ca8" [label="Model Training" height=1.9 image="c:\Users\youss\AppData\Local\Programs\Python\Python39\lib\site-packages\resources/onprem/analytics\spark.png" shape=none]
+	df09a1383ea04e7296dcbe44753e9130 -> "5ebf71c2b05644d69fe40bac82ec8a2f" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	"5ebf71c2b05644d69fe40bac82ec8a2f" -> d3e96e5aa1da4a4098de6459f6642c3a [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	d3e96e5aa1da4a4098de6459f6642c3a -> "9a1c4193584849d493032b4cbc536ca8" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+}

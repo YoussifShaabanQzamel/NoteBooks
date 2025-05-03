@@ -1,0 +1,14 @@
+// FullPipeline1 Architecture
+digraph {
+	A [label="Numerical Imputation (KNN)" shape=box]
+	B [label="Categorical Imputation (Frequency)" shape=box]
+	C [label="Scaling Numerical Columns" shape=box]
+	D [label="Ordinal Encoding" shape=box]
+	E [label="One-Hot Encoding" shape=box]
+	F [label="Target Encoding" shape=box]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+}
